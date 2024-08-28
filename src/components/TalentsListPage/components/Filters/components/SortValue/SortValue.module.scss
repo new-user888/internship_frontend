@@ -1,0 +1,22 @@
+.sort_value {
+	position: relative;
+	padding: 8px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	text-transform: capitalize;
+	&:hover {
+		background-color: #212121;
+	}
+	&.selected {
+		&::after {
+			content: "";
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			right: 10px;
+			background: url("./images/check.png") center center/100% 100%;
+		}
+	}
+}

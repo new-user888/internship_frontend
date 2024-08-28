@@ -1,0 +1,29 @@
+.btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    padding: 20px 20px;
+    line-height: 1.6;
+}
+.btn {
+    padding: 5px 20px;
+}
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px;
+}
+
+.proofs_side {
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+}
+
+@media screen and (max-width: 1068px) {
+    .container {
+        display: table;
+    }
+}

@@ -1,0 +1,30 @@
+.filter_value {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 15px;
+	padding: 5px 0px;
+	cursor: pointer;
+	& > input {
+		display: none;
+		& + label::before {
+			content: "";
+			display: block;
+			width: 20px;
+			height: 20px;
+			border: 1px solid #999;
+			border-radius: 3px;
+			background-color: #212121;
+			cursor: pointer;
+		}
+		&:checked + label::before {
+			background: url("./images/check.png") center center/150% 150%,
+				linear-gradient(180deg, #ce9ffc 0%, #a582f7 50.52%, #7367f0 100%);
+		}
+	}
+	& > div {
+		text-transform: capitalize;
+		user-select: none;
+	}
+}

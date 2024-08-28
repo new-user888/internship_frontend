@@ -1,0 +1,1 @@
+export { useTalent } from "./useTalent";

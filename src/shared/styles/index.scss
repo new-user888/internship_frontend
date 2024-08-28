@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:200,300,regular,500,600,700,800,200italic,300italic,italic,500italic,600italic,700italic,800italic");
+@import url("../fonts/CabinetGrotesk/css/cabinet-grotesk.css");
+@import url("./_nulling.scss");
+
+*::-webkit-scrollbar {  width: 5px;}
+*::-webkit-scrollbar-thumb {background-color: #a582f7;border-radius: 20px;}
+
+body {
+  font-family: "CabinetGrotesk", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
+  background-color: #000;
+  scrollbar-width: thin;
+	scrollbar-color: #a582f7;
+}
+.root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.__container {
+  width: min(100% - 20px, 1250px);
+  margin: 0 auto;
+}

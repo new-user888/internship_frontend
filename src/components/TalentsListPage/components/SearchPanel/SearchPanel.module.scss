@@ -1,0 +1,21 @@
+.search_panel {
+    grid-area: search;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+}
+
+.input {
+    width: 290px;
+    height: 60px;
+    padding: 10px 24px;
+    &#long{
+        width: 450px;        
+    }
+}
+.btn {
+    width: 130px;
+    height: 60px;
+}
+    

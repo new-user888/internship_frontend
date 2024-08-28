@@ -1,0 +1,1 @@
+export { TalentData } from "./TalentData";

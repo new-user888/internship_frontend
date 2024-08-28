@@ -1,0 +1,137 @@
+$gradient: linear-gradient(180deg, #ce9ffc 0%, #a582f7 50.52%, #7367f0 100%);
+$purple: #7367f0;
+
+.header {
+    position: fixed;
+    height: 130px;
+    width: 100%;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+    color: #fff;
+    background: linear-gradient(#000, #000) padding-box,
+        linear-gradient(90deg, #a767e8 0%, #a582f7 50.52%, #7367f0 100%)
+            border-box;
+    font-weight: 500;
+    z-index: 30;
+    border-bottom: 1px solid transparent;
+    & > div:first-child {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+    }
+}
+
+.logo {
+    background: linear-gradient(
+        180deg,
+        #a767e8 0%,
+        #a582f7 50.52%,
+        #7367f0 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: block;
+    color: transparent;
+    font-size: 40px;
+    font-weight: 900;
+    margin: 0px 64px 0px 0px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    span {
+        background: none;
+        -webkit-text-fill-color: white;
+        color: white;
+    }
+}
+@media (min-width: 992px) {
+    .logo:hover {
+        transform: scale(1.02);
+    }
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1 1 auto;
+    gap: 32px;
+    padding: 16px 32px;
+    & a {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.6;
+        &:hover {
+            color: white;
+        }
+        &.active {
+            color: white;
+        }
+    }
+}
+.btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+.username {
+    position: relative;
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    background: linear-gradient(
+        180deg,
+        #c58cff 0%,
+        #a582f7 50.52%,
+        #1b06ff 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    transition: all 0.2s ease;
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(
+            180deg,
+            #c58cff 0%,
+            #a582f7 50.52%,
+            #1b06ff 100%
+        );
+        opacity: 0;
+        visibility: visible;
+        transition: all 0.2s ease;
+    }
+    &:hover {
+        transform: scale(1.05);
+        &:after {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+.btn {
+    padding: 5px 20px;
+}
+
+.kudos_block {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.kudos {
+    transition-duration: 0.5s;
+    margin-bottom: 12px;
+    transition-duration: 0.5s;
+}

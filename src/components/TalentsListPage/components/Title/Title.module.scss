@@ -1,0 +1,14 @@
+.page_title {
+	grid-area: title;
+	background: linear-gradient(180deg, #ce9ffc 0%, #a582f7 50.52%, #7367f0 100%);
+	background-clip: text;
+	color: transparent;
+	font-size: 40px;
+	font-weight: 900;
+	margin: 0px 30px 32px 0px;
+	span {
+		background: none;
+		-webkit-text-fill-color: white;
+		color: white;
+	}
+}

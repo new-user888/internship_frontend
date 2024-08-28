@@ -1,0 +1,1 @@
+export { ProfileProofBlock } from "./ProfileProofBlock";

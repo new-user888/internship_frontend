@@ -1,0 +1,18 @@
+.input {
+    display: block;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    border-radius: 10px;
+    color: #adadad;
+    border: 3px solid transparent;
+    background: linear-gradient(0deg, #000, #000) padding-box,
+        linear-gradient(180deg, #ce9ffc 0%, #a582f7 50%, #7367f0 100%)
+            border-box;
+    background-size: 100% 100%, 100% 100%;
+    &:focus {
+        color: #fff;
+        background: #000;
+        border: 3px solid #fff;
+    }
+}

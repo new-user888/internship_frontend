@@ -1,0 +1,10 @@
+.talents_list {
+    grid-area: list;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 32px;
+    width: min(1000px, 100%); // temporarily
+    margin: 10px auto 0px; // temporarily
+}

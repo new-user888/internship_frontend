@@ -1,0 +1,90 @@
+{
+    "content": [
+        {
+            "id": 1,
+            "image": "https://i.pinimg.com/564x/e1/08/49/e10849923a8b2e85a7adf494ebd063e6.jpg",
+            "firstname": "Serhii",
+            "lastname": "Soloviov",
+            "specialization": "Java-Developer",
+            "skills": [
+                "Java Core",
+                "Spring Core",
+                "Spring boot",
+                "H2 Database"
+            ]
+        },
+        {
+            "id": 2,
+            "image": "https://i.pinimg.com/564x/c2/41/31/c24131fe00218467721ba5bacdf0a256.jpg",
+            "firstname": "Mykhailo",
+            "lastname": "Ordyntsev",
+            "specialization": "Java-Developer",
+            "skills": [
+                "Java Core",
+                "Hibernate",
+                "Spring Boot",
+                "Git"
+            ]
+        },
+        {
+            "id": 3,
+            "image": "https://i.pinimg.com/564x/2a/0c/08/2a0c08c421e253ca895c3fdc8c9e08d9.jpg",
+            "firstname": "Denis",
+            "lastname": "Boyko",
+            "specialization": "Java-Developer",
+            "skills": [
+                "Java Core",
+                "Spring Security",
+                "Spring Core"
+            ]
+        },
+        {
+            "id": 4,
+            "image": "https://i.pinimg.com/564x/e1/11/2f/e1112f0b7b63644dc3e313084936dedb.jpg",
+            "firstname": "Ihor",
+            "lastname": "Schurenko",
+            "specialization": "Java-Developer",
+            "skills": [
+                "Java Core",
+                "REST API"
+            ]
+        },
+        {
+            "id": 5,
+            "image": "https://i.pinimg.com/564x/1c/af/87/1caf8771ef3edf351f6f2bf6f1c0a276.jpg",
+            "firstname": "Dmytro",
+            "lastname": "Uzun",
+            "specialization": "Dev-Ops",
+            "skills": [
+                "Git",
+                "Docker",
+                "Mentor"
+            ]
+        }
+    ],
+    "pageable": {
+        "sort": {
+            "empty": true,
+            "sorted": false,
+            "unsorted": true
+        },
+        "offset": 0,
+        "page_size": 5,
+        "page_number": 0,
+        "unpaged": false,
+        "paged": true
+    },
+    "last": false,
+    "total_elements": 13,
+    "total_pages": 3,
+    "size": 5,
+    "number": 0,
+    "sort": {
+        "empty": true,
+        "sorted": false,
+        "unsorted": true
+    },
+    "first": true,
+    "number_of_elements": 5,
+    "empty": false
+}

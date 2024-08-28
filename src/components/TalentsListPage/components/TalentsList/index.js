@@ -1,0 +1,1 @@
+export { TalentsList } from "./TalentsList";
