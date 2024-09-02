@@ -1,21 +1,8 @@
 server {
     listen 80;
-
-    server_name localhost;
-
-    location /api/ {
-
-        proxy_pass http://java-backend-service:8080;
-
-    }
+    server_name provedcode.org;
 
     location / {
-        root /usr/share/nginx/html;        
-        index index.html;
-        autoindex on;
-        set $fallback_file /index.js.html;
-        try_files $uri $uri/ /index.html;
+        rewrite ^ / permanent;
     }
-
-    error_page  405     =200 $uri;
 }
