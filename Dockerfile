@@ -24,7 +24,7 @@ RUN npm run build
 FROM nginx:alpine as production
 
 COPY --from=builder /app/build /usr/share/nginx/html
-COPY ./Docker/nginx/nginx.template.conf /etc/nginx/conf.d/default.conf
+COPY ./Docker/nginx/nginx.conf.template /etc/nginx/conf.d/default.conf
 
 CMD [ "nginx", "-g", "daemon off;" ]
 
