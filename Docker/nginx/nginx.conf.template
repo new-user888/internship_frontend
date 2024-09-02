@@ -1,9 +1,11 @@
 server {
     listen 80;
-    server_name provedcode.org;
+    server_name localhost;
+
     root /usr/share/nginx/html;
+    index index.html;
 
     location / {
-        rewrite ^ / permanent;
+        try_files $uri /index.html;
     }
 }
