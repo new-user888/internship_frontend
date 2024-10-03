@@ -51,5 +51,5 @@ jobs:
       run: npm install && npm run build
 
     - name: Push to S3 Bucket
-      run: aws s3 cp /build/* s3://frontend-bucket-internship/ --recursive 
+      run: aws s3 cp ./build/* s3://frontend-bucket-internship/ --recursive 
         
