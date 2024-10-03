@@ -50,8 +50,8 @@ jobs:
     - name: Build
       run: npm install && npm run build
       env:
-        REACT_APP_BASE_URL: ${{ var.REACT_APP_BASE_URL }}
-        NODE_ENV: ${{ var.NODE_ENV }}
+        REACT_APP_BASE_URL: ${{ vars.REACT_APP_BASE_URL }}
+        NODE_ENV: ${{ vars.NODE_ENV }}
 
     - name: Push to S3 Bucket
       run: aws s3 cp ./build/ s3://frontend-bucket-internship/ --recursive 
