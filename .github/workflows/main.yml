@@ -59,6 +59,7 @@ jobs:
           category: "/language:${{matrix.language}}"
           
   test:
+    name: Test
     environment: production
     runs-on: ubuntu-22.04
     steps:
@@ -78,6 +79,7 @@ jobs:
       run: echo "It has no tests"
       
   build-and-push:
+    name: Build and push to S3
     environment: production
     runs-on: ubuntu-22.04
     needs: ['test', 'analyze']
