@@ -80,7 +80,7 @@ jobs:
   build-and-push:
     environment: production
     runs-on: ubuntu-22.04
-    needs: ['test']
+    needs: ['test', 'analyze']
     steps:
     - name: Checkout
       uses: actions/checkout@v2
