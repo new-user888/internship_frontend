@@ -21,7 +21,7 @@ RUN npm run build
 # PRODUCTION
 ###################
 
-FROM nginx:alpine as production
+FROM nginx:1.29.4-alpine3.23 as production
 
 COPY --from=builder /app/build /usr/share/nginx/html
 
